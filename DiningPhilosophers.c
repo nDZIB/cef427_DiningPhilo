@@ -13,11 +13,7 @@ sem_t s;
 enum phil_state {
     THINKING, WAITING, EATING
 };
-struct p {
-    char* name;
-};
 typedef struct phil {
-    sem_t cutlery;
     int phil_index;
     int food_qty;
     int phil_status;
